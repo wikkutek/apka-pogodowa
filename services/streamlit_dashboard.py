@@ -77,10 +77,10 @@ df = df.sort_values("timestamp_dt", ascending=True) #ascending - rosnąco
 
 #---- PLOTLY ----
 
-fig = px.pie(
-    data_frame=df,
-    names="description",
-    title="Udział typów pogody"
-)
+#fig = px.pie(
+#     data_frame=df,
+#     names="description",
+#     title="Udział typów pogody"
+# )
 
-fig.show()
+#fig.show()

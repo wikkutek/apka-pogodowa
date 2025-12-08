@@ -12,7 +12,6 @@ def fetch_weather(): #tworzymy funkcję, którą wywołamy w main
 
         res = requests.get(url)
         data = res.json() #konwersja danych na takie, które możemy odczytać
-
         weather = {
             "temp" : convert_to_celsius(data["main"]["temp"]),
             "temp_feels_like" : convert_to_celsius(data["main"]["feels_like"]),
